@@ -1,0 +1,9 @@
+target/
+.git/
+.github/
+.env
+.env.*
+!.env.example
+node_modules/
+data/
+data.db*

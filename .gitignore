@@ -1,0 +1,12 @@
+# Rust build artifacts
+/target/
+
+# Local SQLite databases
+/data.db*
+/data/
+!/data/.gitkeep
+
+# Environment secrets
+.env
+.env.*
+!.env.example

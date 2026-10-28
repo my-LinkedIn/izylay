@@ -1,0 +1,15 @@
+
+services:
+  izylay:
+    image: izylay:local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: izylay
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      RUST_LOG: info
+    volumes:
+      - ./data:/app/data
